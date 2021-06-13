@@ -20,6 +20,6 @@ from student_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^$', views.IndexView.as_view(), name = 'index'),
+    url(r'^$', views.IndexView.as_view()),
     url(r'^student_app/', include('student_app.urls', namespace = 'student_app')),
 ]
