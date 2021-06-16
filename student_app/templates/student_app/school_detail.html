@@ -7,7 +7,7 @@
         <p>Principal: {{ school_detail.principal }}</p>
         <p>Location: {{ school_detail.location }}</p>
         <h3>Students:</h3>
-        {% for student in school_detail.students.all %} <!--.students come from related_name='students' in models.py-->
+        {% for student in school_detail.students.all %} <!--.'students' come from related_name='students' in models.py-->
             <p>Name: {{ student.name }}</p>
             <p>Age: {{student.age}} </p> 
         {% endfor %}
